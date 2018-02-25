@@ -14,17 +14,17 @@
 
 # Singular and mass nouns.  Notice that only the
 # ones that start with consonants get our Noun tag.
-1    Noun    castle
-1    Noun    king
-1    Noun    defeater
-1    Noun    sovereign
-1    Noun    servant
+1    Noun3    castle
+1    Noun3    king
+1    Noun3    defeater
+1    Noun3    sovereign
+1    Noun3    servant
+1    Noun3    master
+1    Noun3    horse
 1    Noun    corner
 1    Noun    land
 1    Noun    quest
 1    Noun    chalice
-1    Noun    master
-1    Noun    horse
 1    Noun    fruit
 1    Noun    swallow
 1    Noun    sun
