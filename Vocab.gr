@@ -85,7 +85,7 @@
 # and some of those could also function as intransitives!
 1    VerbT    has
 1    VerbT    covers
-1    VerbT    is
+1    IS    is
 1    VerbT    drinks
 1    VerbT    carries
 1    VerbT    rides
@@ -209,17 +209,17 @@
 1    Misc    Saxons
 
 # Personal pronouns.
-1    Prp    I
-1    Prp    her
-1    Prp    him
-1    Prp    them
-1    Prp    they
+1 PrpO her
+1 PrpO him
+1 PrpO them
 
-1    Prp3    he
-1    Prp3    she
-1    Prp3    it
-1    Prp3    one
+1 PrpS I
+1 PrpS they
 
+1 Prp3 he
+1 Prp3 she
+1 Prp3 it
+1 Prp3 one
 
 # Possessive personal pronouns
 1    Prp$    her
@@ -312,7 +312,7 @@
 1    Vb    have
 1    Vb    speak
 1    Vb    cover
-1    Vb    are
+1    ARE    are
 1    Vb    ride
 1    Vb    drink
 1    Vb    grow
