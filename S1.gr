@@ -11,6 +11,7 @@
 1   S1   NP3 _VP3
 1   S1   QStart QEnd
 1   S1   Gerund _VP
+1   S1   Imp
 
 3   _VP  NP VP
 3   _VP  VP Punc
@@ -101,6 +102,9 @@
 1   Gerund  Vbg
 1   Gerund  Vbg PP
 1   Gerund  Vbg NP
+
+1   Imp  Vb NP
+1   Imp  Vb PP
 
 # in case you use S1.gr by itself
 1   S2   Misc
