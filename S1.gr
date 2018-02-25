@@ -1,0 +1,106 @@
+# The start symbol is TOP.
+
+# These two rules are required; choose their weights carefully!
+40  TOP  S1
+60   TOP  S2
+
+# This is a very, very, very simple grammar to get you started.
+
+1   S1   NP VP
+1   S1   NP _VP
+1   S1   NP3 _VP3
+1   S1   QStart QEnd
+1   S1   Gerund _VP
+
+3   _VP  NP VP
+3   _VP  VP Punc
+
+1   _VP3 VP3 Punc
+
+1    VP3 Vbz NP
+1    VP3 Vbz NV
+
+10   VP   VerbT NP
+9    VP   Vbar NP
+5    VP   Vbar VP
+5    VP   VerbT
+5    VP   VerbT Jj
+4    VP   To NP
+4    VP   Vpp Vbar
+3    VP   Vbar NV
+2    VP   Vbar Rb
+1    VP   Vbar Pause
+1    VP   Vb Vbar
+
+1    Vbar  Vbg PP
+1    Vbar  Vbd
+1    Vbar  Vbd
+1    Vbar  Vb
+1    Vbar  VerbT
+
+1    Vpp   Vb Vbn
+
+20  NP   Det Nbar
+10  NP   Prp$ Nbar
+4   NP   Wrb NP
+4   NP   Cd NP
+4   NP   NP NV
+4   NP   NP Md
+4   NP   NP3 Md
+6   NP   Nbar
+3   NP   Proper
+2   NP   Cc Proper
+2   NP   NP Pause
+2   NP   NP NP
+1   NP   Prp
+
+1   NP3 Prp3
+
+10  Nbar Noun
+5   Nbar Jj Nbar
+4   Nbar Nbar VP
+3   Nbar Nns
+1   Nbar Nbar PP
+
+1   PP   Prep NP
+1   PP   Prep NV
+1   PP   To Loc
+
+1   NV   Wdt VP
+1   NV   Wdt _VP
+1   NV   Wdt Nbar
+
+1   QStart  Wp DOPhrase
+1   QStart  Wrb DOPhrase
+1   QStart  DOPhrase
+1   QStart  AltQ Gerund
+
+1   AltQ    Vb Prp3
+1   AltQ    Vb Prp
+1   AltQ    VerbT Prp3
+1   AltQ    VerbT Prp
+
+1   DOPhrase    DOP Nns
+1   DOPhrase    DOS NP
+1   DOPhrase    DOS Loc
+1   DOPhrase    DOS Special
+
+1   Special    Det HGrail
+1   Special    Det RTable
+
+1   QEnd    VPhrase _?
+
+1   VPhrase Vb Act
+1   VPhrase Vb
+1   VPhrase Vb NP
+1   VPhrase VP
+
+1   Act Prp Vb
+1   Act Prp3 Vb
+
+1   Gerund  Vbg
+1   Gerund  Vbg PP
+1   Gerund  Vbg NP
+
+# in case you use S1.gr by itself
+1   S2   Misc
