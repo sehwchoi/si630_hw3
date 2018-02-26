@@ -186,3 +186,8 @@
 
 # in case you use S1.gr by itself
 1   S2   Misc
+
+1   S1   Imp
+
+1   Imp  Vb NP
+1   Imp  Vb PP
